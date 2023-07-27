@@ -1,0 +1,18 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: influxdb
+spec:
+  type: bindings.influx
+  version: v1
+  metadata:
+  - name: url
+    value: "https://us-east-1-1.aws.cloud2.influxdata.com/" # replace with your InfluxDB Cloud URL
+  - name: token
+    value: "AVwF19Or-9sMy91Eu280ohCFPe5FUkjndRk4Xt25bVPlYwk-q4QeMtOG3DENGtkmnT_ASVWvmFd2prqUKO1zow=="
+  - name: org
+    value: "04a9d9d93ecb06a8" # replace with your InfluxDB organization ID
+  - name: bucket
+    value: "sensordata" # replace with your InfluxDB bucket ID
+
+
